@@ -400,6 +400,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+<!--                            这会导致依赖的maven包锁依赖的maven包不会引入，只引入这个项目依赖的maven包-->
                             <minimizeJar>true</minimizeJar>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
